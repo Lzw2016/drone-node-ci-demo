@@ -20,7 +20,7 @@ config
 docker
 functions
 mock
-node_modules
+# node_modules
 public
 scripts
 src
