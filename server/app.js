@@ -12,7 +12,7 @@ const router = new Router();
 // 错误处理
 app.use(errorHandler);
 // 静态文件处理
-app.use(KoaStatic('../dist', { index: 'index.html', gzip: false }));
+app.use(KoaStatic('./dist', { index: 'index.html', gzip: false }));
 
 router
   // 健康检查

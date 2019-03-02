@@ -1,5 +1,6 @@
-FROM node:8.4
-COPY . /app
+FROM 192.168.159.136:5000/node:10.15.2-alpine as dev
+
+ADD . /app
 WORKDIR /app
-RUN ["npm", "install"]
-EXPOSE 3000/tcp
+ENTRYPOINT ["node", "server/server.js", "-P 9066"]
+EXPOSE 9066
