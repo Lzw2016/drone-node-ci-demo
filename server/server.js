@@ -1,4 +1,3 @@
-
 /* eslint-disable */
 // 命令行参数处理
 const program = require('commander');
